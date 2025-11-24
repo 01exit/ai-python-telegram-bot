@@ -69,19 +69,36 @@ project/
 /lang - Change your language
 
 /config - selection of different models for generation
+
 /image - Create a unique image using Snap-AI
+
 /image2 - Another method for generating images with Snap-AI
+
 /reimage - Generates a similar image (reference)
+
 /upscale - Improve image quality and size
+
 /expand - Image enlargement through AI generation
+
 /snap - Generate text with Snap-AI
+
 /search - Search for information on the internet with Snap-AI
+
 /vision - Get a description of an image provided
+
 /background - Change the background in a photo
+
 /donate - Donate to the project
+
 /my_coins - View Snap Coin Balance
+
 /my_id - Get your user ID in the bot
+
 /invite - Generate an invitation link
+
 /my_invites - View the number of invited users
+
 /invite_reward - Get a reward for invitations
+
 /v - Display the current bot version and updates
+
