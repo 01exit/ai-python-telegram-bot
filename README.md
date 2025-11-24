@@ -1,7 +1,7 @@
 # Telegram bot using AI APIs
 Telegram bot integrated with AI APIs, including Hugging Face for image generation and Mistral AI for text generation
 
-**Task:**
+## Task:
 Creating a full-featured Telegram bot for image generation, image editing, and text generation using AI.
 
 # Solution:
