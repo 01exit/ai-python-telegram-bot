@@ -2,15 +2,58 @@
 Telegram bot integrated with AI APIs, including Hugging Face for image generation and Mistral AI for text generation
 
 ### Task:
-Creating a full-featured Telegram bot for image generation, image editing, and text generation using AI.
+Create a full-featured Telegram bot capable of:
+- Generating images
+- Editing images
+- Generating text
+using AI services.
 
 ### Solution:
-Integration of third-party APIs for image generation and editing.
-Image generation and editing: Hugging Face, Bria.ai
-Text generation: Mistral.ai
+- Integration of third-party APIs for image generation and editing  
+  - **Image generation and editing:** Hugging Face, Bria.ai  
+  - **Text generation:** Mistral.ai  
 
 ### Result:
-When the user sends specific commands to the bot, such as "/image", the bot generates an image based on the user's request.
+- User sends a command like `/image` and receives a generated image based on the request.  
+- Fully functional bot ready to deploy on Telegram.
+
+## Project structure
+```
+project/
+├── app.py
+├── Procfile
+├── requirements.txt
+├── runtime.txt
+├── comicbd.ttf
+├── .env           # local file, do NOT commit
+├── handlers.py
+│
+├── snap_actions/  # AI image generation and editing scripts
+│   ├── bria_background_change.py
+│   ├── bria_expand.py
+│   ├── bria_inpaint.py
+│   ├── bria_inpaint_create_mask.py
+│   ├── bria_reimage.py
+│   ├── bria_upscaling.py
+│   ├── image_generator_BRIA.py
+│   ├── image_generator_HF.py
+│   ├── search.py
+│   ├── snap_generate.py
+│   ├── snap_vision.py
+│   └── __init__.py
+│
+└── snap_utils/    # Utilities: DB, config, payment, multi-language, etc.
+    ├── captcha.py
+    ├── checker.py
+    ├── config.py
+    ├── cryptomus.py
+    ├── database.py
+    ├── keyboards.py
+    ├── limits.py
+    ├── multilang.py
+    ├── utils.py
+    └── __init__.py
+```
 
 ### Launch:
 1. Clone the repository:
@@ -52,44 +95,6 @@ Python, Aiogram, and the basic imports listed in requirements.txt.
 ### Important notes:
 The bot was rewritten several times and deployed on different platforms (Heroku and Render). This specific version is adapted for deployment on Heroku.
 
-## Project structure
-
-```bash
-project/
-├── app.py
-├── Procfile
-├── requirements.txt
-├── runtime.txt
-├── comicbd.ttf
-├── .env     # local, .example_env
-├── handlers.py
-│
-├── snap_actions/
-│   ├── bria_background_change.py
-│   ├── bria_expand.py
-│   ├── bria_inpaint.py
-│   ├── bria_inpaint_create_mask.py
-│   ├── bria_reimage.py
-│   ├── bria_upscaling.py
-│   ├── image_generator_BRIA.py
-│   ├── image_generator_HF.py
-│   ├── search.py
-│   ├── snap_generate.py
-│   ├── snap_vision.py
-│   └── __init__.py
-│
-└── snap_utils/
-    ├── captcha.py
-    ├── checker.py
-    ├── config.py
-    ├── cryptomus.py
-    ├── database.py
-    ├── keyboards.py
-    ├── limits.py
-    ├── multilang.py
-    ├── utils.py
-    └── __init__.py
-```
 ## Bot commands:
 `/reg` - Start the registration process for new users
 
