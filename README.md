@@ -13,9 +13,38 @@ Text generation: Mistral.ai
 When the user sends specific commands to the bot, such as "/image", the bot generates an image based on the user's request.
 
 ### Launch:
-Install all dependencies from requirements.txt and create a Telegram bot, adding its token to the TOKEN field in the .env file.
-You must also have API tokens from the services listed above, as well as a payment system token from Cryptomus.
-All required environment variables are described in the .example_env file.
+1. Clone the repository:
+
+```bash
+git clone <repo_url>
+cd project
+```
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Create a `.env` file based on `.example_env` and add your API keys.
+
+4. Run the bot:
+
+```bash
+python app.py
+```
+
+
+## Environment variables
+The following tokens are required in your `.env` file:
+
+- `TOKEN` – Telegram bot token  
+- `HF_API_KEY` – Hugging Face API token  
+- `BRIA_API_KEY` – Bria.ai API token  
+- `MISTRAL_API_KEY` – Mistral.ai API token  
+- `CRYPTOMUS_KEY` – Cryptomus payment API token  
+
+All required variables are listed in `.example_env`.
 
 ### Stack:
 Python, Aiogram, and the basic imports listed in requirements.txt.
@@ -64,41 +93,41 @@ project/
 ## Bot commands:
 `/reg` - Start the registration process for new users
 
-/info - Get full information about the command
+`/info` - Get full information about the command
 
-/lang - Change your language
+`/lang` - Change your language
 
-/config - selection of different models for generation
+`/config` - selection of different models for generation
 
-/image - Create a unique image using Snap-AI
+`/image` - Create a unique image using Snap-AI
 
-/image2 - Another method for generating images with Snap-AI
+`/image2` - Another method for generating images with Snap-AI
 
-/reimage - Generates a similar image (reference)
+`/reimage` - Generates a similar image (reference)
 
-/upscale - Improve image quality and size
+`/upscale` - Improve image quality and size
 
-/expand - Image enlargement through AI generation
+`/expand` - Image enlargement through AI generation
 
-/snap - Generate text with Snap-AI
+`/snap` - Generate text with Snap-AI
 
-/search - Search for information on the internet with Snap-AI
+`/search` - Search for information on the internet with Snap-AI
 
-/vision - Get a description of an image provided
+`/vision` - Get a description of an image provided
 
-/background - Change the background in a photo
+`/background` - Change the background in a photo
 
-/donate - Donate to the project
+`/donate` - Donate to the project
 
-/my_coins - View Snap Coin Balance
+`/my_coins` - View Snap Coin Balance
 
-/my_id - Get your user ID in the bot
+`/my_id` - Get your user ID in the bot
 
-/invite - Generate an invitation link
+`/invite` - Generate an invitation link
 
-/my_invites - View the number of invited users
+`/my_invites` - View the number of invited users
 
-/invite_reward - Get a reward for invitations
+`/invite_reward` - Get a reward for invitations
 
-/v - Display the current bot version and updates
+`/v` - Display the current bot version and updates
 
