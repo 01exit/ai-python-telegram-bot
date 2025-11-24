@@ -63,8 +63,11 @@ project/
 ```
 ## Bot commands:
 /reg - Start the registration process for new users
+
 /info - Get full information about the command
+
 /lang - Change your language
+
 /config - selection of different models for generation
 /image - Create a unique image using Snap-AI
 /image2 - Another method for generating images with Snap-AI
