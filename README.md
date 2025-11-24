@@ -62,7 +62,7 @@ project/
     └── __init__.py
 ```
 ## Bot commands:
-/reg - Start the registration process for new users
+`/reg` - Start the registration process for new users
 
 /info - Get full information about the command
 
