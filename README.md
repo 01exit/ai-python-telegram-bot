@@ -25,38 +25,40 @@ The bot was rewritten several times and deployed on different platforms (Heroku 
 
 ## Project structure
 
-```
-│   .env
-│   app.py
-│   comicbd.ttf
-│   handlers.py
-│   Procfile
-│   requirements.txt
-│   runtime.txt
+```bash
+project/
+├── app.py
+├── Procfile
+├── requirements.txt
+├── runtime.txt
+├── comicbd.ttf
+├── .env     # local, .example_env
+├── handlers.py
 │
-├───snap_actions
-│       bria_background_change.py
-│       bria_expand.py
-│       bria_inpaint.py
-│       bria_inpaint_create_mask.py
-│       bria_reimage.py
-│       bria_upscaling.py
-│       image_generator_BRIA.py
-│       image_generator_HF.py
-│       search.py
-│       snap_generate.py
-│       snap_vision.py
-│       __init__.py
+├── snap_actions/
+│   ├── bria_background_change.py
+│   ├── bria_expand.py
+│   ├── bria_inpaint.py
+│   ├── bria_inpaint_create_mask.py
+│   ├── bria_reimage.py
+│   ├── bria_upscaling.py
+│   ├── image_generator_BRIA.py
+│   ├── image_generator_HF.py
+│   ├── search.py
+│   ├── snap_generate.py
+│   ├── snap_vision.py
+│   └── __init__.py
 │
-└───snap_utils
-        captcha.py
-        checker.py
-        config.py
-        cryptomus.py
-        database.py
-        keyboards.py
-        limits.py
-        multilang.py
-        utils.py
-        __init__.py
+└── snap_utils/
+    ├── captcha.py
+    ├── checker.py
+    ├── config.py
+    ├── cryptomus.py
+    ├── database.py
+    ├── keyboards.py
+    ├── limits.py
+    ├── multilang.py
+    ├── utils.py
+    └── __init__.py
 ```
+
